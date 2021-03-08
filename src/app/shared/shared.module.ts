@@ -8,6 +8,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
     MatDividerModule,
     MatToolbarModule,
     FlexLayoutModule,
-    MatButtonModule
   ],
   exports: [
     HeaderComponent,
