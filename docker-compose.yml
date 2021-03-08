@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 4200:4200
+    volumes:
+      - .:/angular-dashboard
+    command: bash -c 'yarn install && ng s --host 0.0.0.0'
+    tty: true
