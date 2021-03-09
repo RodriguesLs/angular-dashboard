@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,10 @@ import { MatMenuModule } from '@angular/material/menu';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     MatIconModule,
     MatMenuModule,
+    MatListModule,
     MatButtonModule,
     MatDividerModule,
     MatToolbarModule,
